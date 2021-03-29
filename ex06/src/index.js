@@ -1,5 +1,5 @@
 // Only change code below this line
-exports.firstName = (firstName) => {
+const firstName = (firstName) => {
   return firstName.toUpperCase();
 };
 const lastName = (lastName) => {
@@ -7,6 +7,7 @@ const lastName = (lastName) => {
 };
 
 // Only change code above this line
-console.log(this.firstName("henry"));
+console.log(firstName("henry"));
 console.log(lastName("JoE"));
-module.exports = lastName;
+exports.firstName = firstName;
+exports.lastName = lastName;
